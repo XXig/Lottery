@@ -1,0 +1,56 @@
+$primaryColor: #d91d37;
+// 支付
+.pay{
+	color:#333;
+	font-size: .14rem;
+	line-height: .26rem;
+	ul{
+		border-bottom: 4px solid #efeeeb;
+	}
+	li{
+		margin-top:.1rem;
+		display: flex;
+	}
+	.infor-pay{
+		padding:.05rem .15rem;
+		p{
+			margin-left: auto;
+		}
+	}
+	.select-pay{
+		padding:.1rem .15rem;
+		li{
+			padding-bottom: .15rem;
+		}
+		i{
+			font-size: .3rem;
+			margin-right: .1rem;
+		}
+		.icon-weixin{
+			color:#72bd63;
+		}
+		.icon-alipay{
+			color:#07a0f8;
+		}
+		.icon-weixuan{
+			margin-left: auto;
+			color:#efeeeb;
+		}
+		.on{
+			.icon-weixuan{
+				color:$primaryColor;
+			}
+		}
+	}
+	.btn-pay{
+		width: 90%;
+		height: .4rem;
+		margin: .2rem auto;
+		background: #b01e35;
+		border-radius: .05rem;
+		color: #fff;
+		font-size: .18rem;
+		text-align: center;
+		line-height: .4rem;
+	}
+}
