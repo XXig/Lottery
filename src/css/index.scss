@@ -1,0 +1,111 @@
+$primaryColor: #d91d37;
+body{background:#f9f8f0}
+// 导航
+.nav{
+  background: #fff;
+  border-bottom: 1px solid #efeeeb;
+  padding:.1rem 0;
+  p{
+    width: 90%;
+    margin: 0 auto;
+    border-bottom:1px dotted #efefef;
+    color: #8e8e8e;
+    font-size:.14rem;
+    line-height: .28rem;
+    strong{
+      color: $primaryColor;
+      font-size:.16rem;
+    }
+  }
+  .list{
+    margin-top: .1rem;
+    display: flex;
+    justify-content:space-between;
+    li{
+      flex:auto;
+      text-align: center;
+      a{
+        display: block;
+        font-size: .3rem;
+        span{
+          display:block;
+          width: .3rem;
+          margin: 0 auto;
+          font-size:.14rem;
+        }
+      }
+      .icon-hongbao{
+        color: $primaryColor;
+      }
+      .icon-jinbi{
+        color: #fc9721;
+      }
+      .icon-fenlei{
+        color: #5dc31d;
+      }
+      .icon-liwu{
+        color: #1d99d9;
+      }
+    }
+  }
+}
+// 彩票模块
+.caip{
+  margin-top: .1rem;
+  background: #fff;
+  border-top: 1px solid #efeeeb;
+  border-bottom: 1px solid #efeeeb;
+  display: flex;
+  flex-flow:row wrap;
+  a{
+    flex:1 0 50%;
+    padding:.15rem .1rem;
+    border-bottom: 1px solid #efeeeb;
+    display: flex;
+    overflow: hidden;
+    i{
+      flex:none;
+      display: block;
+      width: .5rem;
+      img{
+        width: 100%;
+      }
+    }
+    p{
+      padding-left: .08rem;
+      color: #333;
+      font-size: .16rem;
+      span{
+        width: 1rem;
+        display: block;
+        padding-top: .04rem;
+        color: #999;
+        font-size: .14rem;
+      }
+      span.b{
+        color:$primaryColor;
+      }
+    }
+  }
+  a:nth-child(odd){
+    &>p{
+      border-right: 1px solid #efeeeb;
+    }
+  }
+}
+.f-tip{
+  padding:.05rem .2rem;
+  border-bottom: 1px solid rgba(204,204,204,.5);
+  color: #666;
+  font-size: .14rem;
+  span{
+    display: block;
+    width: 1rem;
+    float: right;
+    color: #45a1db;
+    text-align: center;
+    &:active{
+      opacity: .7;
+    }
+  }
+}
